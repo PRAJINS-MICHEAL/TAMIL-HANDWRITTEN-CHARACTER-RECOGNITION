@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>தமிழ்</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <!-- Fontawesome Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">தமிழ்</a></h2>
+        <input type="checkbox" id="menu-toggler" />
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="white"
+            width="24px"
+            height="24px"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Introduction</a></li>
+          <li><a href="#portfolio">0ur work</a></li>
+          <li><a href="./ourservice.html">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>தமிழ்</h1>
+          <p>
+            Discover all you solutions for the doubts regarding <br/>
+            World First Known Language Tamizh
+          </p>
+        </div>
+        <a href="#services">Introduction</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Introduction</h2>
+      <p>Explore our wide range of services.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="static/images/introo.jpg" alt="img" />
+          <h3>Tents</h3>
+          <p>
+            Experience comfort and protection with our high-quality camping
+            tents.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>0ur work</h2>
+      <p>Take a look at some of our wonderful solutions.</p>
+      <div class="container">
+        <button id="loadButton" class="butt">Load 0ur work</button>
+        <div id="iframeContainer"></div>
+      </div>
+
+      <script>
+        const loadButton = document.getElementById("loadButton");
+        const iframeContainer = document.getElementById("iframeContainer");
+
+        loadButton.addEventListener("click", () => {
+          // Create the iframe element
+        const a = document.createElement("a");
+        a.href = "/ourwork";
+        a.target = "_blank";
+        a.click();
+
+          // Append the iframe to the container
+          iframeContainer.appendChild(iframe);
+
+          // Hide the button after clicking
+          loadButton.style.display = "none";
+        });
+      </script>
+    </section>
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p>Discover our story in providing camping services.</p>
+      <div class="row company-info">
+        <h3>Our Story</h3>
+        <p>
+          Experience the excellence of our camping gear and services, where we
+          have been offering high-quality camping essentials and gear for
+          outdoor enthusiasts for over a decade. Our commitment to quality and
+          customer satisfaction ensures that every adventurer can rely on us for
+          their camping needs.
+        </p>
+      </div>
+      <div class="row mission-vision">
+        <h3>Our Mission</h3>
+        <p>
+          At Camping Gear Experts, our mission is to equip outdoor enthusiasts
+          with top-notch camping gear and essentials that enhance their outdoor
+          experiences. We strive to provide reliable, durable, and innovative
+          products that contribute to memorable adventures and lasting memories.
+        </p>
+        <h3>Our Vision</h3>
+        <p>
+          Our vision is to become the go-to destination for camping enthusiasts,
+          known for our extensive selection of premium camping gear and
+          exceptional customer service. We aspire to inspire and enable people
+          to embrace the beauty of nature and create unforgettable camping
+          experiences.
+        </p>
+      </div>
+      <div class="row team">
+        <h3>Our Team</h3>
+        <ul>
+          <li>Prajins M - Computer Science Engineer</li>
+          <li>Mohammad Shak Mohaideen J - Computer Science Engineer</li>
+          <li>S P Harshid Dev - Computer Technologist</li>
+          <li>Allan Richard J - Artificial Intelligence and Data Scientist</li>
+          <li>Jaishree N - Electronics and Communication Engineer</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Bannari Amman Institute of Technology
+            </p>
+            <p><i class="fas fa-envelope"></i> prajins.cs21@bitsathy.ac.in</p>
+            <p><i class="fas fa-globe"></i>https://127.0.0.1:5000</p>
+          </div>
+        </div>
+        <div class="col form">
+          <form id="form">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name*"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+            <textarea
+              id="message"
+              placeholder="Message*"
+              name="message"
+            ></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © 2023 All Rights Reserved</span>
+        <span class="link">
+          <a href="#">Home</a>
+          <a href="#contact">Contact</a>
+        </span>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      document.getElementById("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        sendEmail();
+      });
+      function sendEmail() {
+        console.log("test");
+        Email.send({
+          SecureToken: "d30fa2cf-fa4b-4398-8c98-3e04bf929a3c",
+          To: "shakmohamed707@gmail.com",
+          From: "shakmohamed707@gmail.com",
+          Subject: "தமிழ்",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "<br> Email: " +
+            document.getElementById("email").value +
+            "<br> Message: " +
+            document.getElementById("message").value,
+        }).then((message) => {
+          alert("submited");
+          Email.send({
+            SecureToken: "d30fa2cf-fa4b-4398-8c98-3e04bf929a3c",
+            To: document.getElementById("email").value,
+            From: "shakmohamed707@gmail.com",
+            Subject: "reply to mail",
+            Body: "thankyou for contacting us",
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

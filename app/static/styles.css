@@ -1,0 +1,98 @@
+body {
+    background-color: transparent; /* Fully transparent */
+    background-image: url("static/images/indexxbg.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+}
+
+ol {
+    padding-left: 20px;
+    margin-top: -40px; /* Add a positive margin for spacing */
+    margin-bottom: 20px; /* Add a positive margin for spacing */
+    font-size: 17px;
+}
+canvas {
+    /* width: 250px;
+    height: 250px; */
+    border: 3px solid black;
+    border-radius: 0px;
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
+    background-color: transparent;
+}
+
+#canvas{
+    border: 3px 0px 3px 3px solid black;
+}
+
+#canvas2{
+    border: 3px 0px 3px 0px solid black;
+}
+
+#canvas3{
+    border: 3px 0px 3px 0px solid black;
+}
+
+button {
+    display: inline-block;
+    width: 125px;
+    color: #fff;
+    background-color: rgb(68, 79, 3);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#buttons {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#guess {
+    margin-top: -20px;
+    font-size: 100px;
+}
+
+#suggestion {
+    margin-top: 50px;
+}
+
+#myguess {
+    font-size: 24px;
+}
+
+#info {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 75px;
+}
+
+#divider {
+    display: inline;
+}
+
+#links {
+    text-align: center;
+    margin-bottom: 50px;
+    display: inline;
+}
+
+#all {
+    margin-top: 30px;
+}
+
+.canvass{
+    display: flex;
+    justify-content: center;
+    
+}
